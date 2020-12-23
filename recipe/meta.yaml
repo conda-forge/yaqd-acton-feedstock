@@ -1,5 +1,5 @@
 {% set name = "yaqd-acton" %}
-{% set version = "2020.7.0" %}
+{% set version = "2020.12.0" %}
 
 
 package:
@@ -8,7 +8,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: abe2575201733e3216f6a25ff2e409452a0b71a0272696a0f7cf7103f208873a
+  sha256: ba1ed69f8ba1090997c7a014bbdeceb0ee7b50123b5934d856ce9c5eb5b228d9
 
 build:
   number: 0
@@ -47,4 +47,4 @@ about:
 extra:
   recipe-maintainers:
     - untzag
-    - ksunden 
+    - ksunden
