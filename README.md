@@ -5,11 +5,9 @@ Home: https://gitlab.com/yaq/yaqd-acton
 
 Package license: LGPL-3.0-only
 
-Feedstock license: BSD-3-Clause
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/yaqd-acton-feedstock/blob/master/LICENSE.txt)
 
 Summary: yaq daemons for Acton Research Corporation instruments
-
-
 
 Current build status
 ====================
