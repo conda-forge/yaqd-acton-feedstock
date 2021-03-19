@@ -1,5 +1,5 @@
 {% set name = "yaqd-acton" %}
-{% set version = "2020.12.0" %}
+{% set version = "2021.3.0" %}
 
 
 package:
@@ -8,7 +8,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: ba1ed69f8ba1090997c7a014bbdeceb0ee7b50123b5934d856ce9c5eb5b228d9
+  sha256: 021e38ce7e31deb521c64ca3b60776d20f368586f8a36aa24959097ce1cf7e46
 
 build:
   number: 0
@@ -23,11 +23,11 @@ requirements:
     - pip
     - flit
     - pyserial
-    - yaqd-core >=2020.06.2
+    - yaqd-core >=2021.3.0
   run:
     - python >=3.8
     - pyserial
-    - yaqd-core >=2020.06.2
+    - yaqd-core >=2021.3.0
 
 test:
   imports:
