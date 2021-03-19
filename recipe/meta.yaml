@@ -23,11 +23,11 @@ requirements:
     - pip
     - flit
     - pyserial
-    - yaqd-core >=2020.06.2
+    - yaqd-core >=2021.3.0
   run:
     - python >=3.8
     - pyserial
-    - yaqd-core >=2020.06.2
+    - yaqd-core >=2021.3.0
 
 test:
   imports:
