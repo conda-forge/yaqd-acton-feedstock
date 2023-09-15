@@ -1,5 +1,5 @@
 {% set name = "yaqd-acton" %}
-{% set version = "2022.5.0" %}
+{% set version = "2023.9.0" %}
 
 
 package:
@@ -7,8 +7,8 @@ package:
   version: {{ version }}
 
 source:
-  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: 14839914a855b15681cd29aa8ff0744dff3d6e5f81d9a364a81a1d61ba39021c
+  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name.replace('-', '_') }}-{{ version }}.tar.gz
+  sha256: e585ce8a2f85414a4dfdaf175b603f6ce582e9a375dc8b5fed2ec2ddab8b943e
 
 build:
   number: 0
