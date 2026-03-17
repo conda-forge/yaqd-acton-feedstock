@@ -7,11 +7,11 @@ package:
   version: {{ version }}
 
 source:
-  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name.replace('-', '_') }}-{{ version }}.tar.gz
+  url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/{{ name.replace('-', '_') }}-{{ version }}.tar.gz
   sha256: e585ce8a2f85414a4dfdaf175b603f6ce582e9a375dc8b5fed2ec2ddab8b943e
 
 build:
-  number: 0
+  number: 1
   noarch: python
   entry_points:
     - yaqd-acton-2150i = yaqd_acton._acton_2150i:Acton2150I.main
@@ -19,13 +19,13 @@ build:
 
 requirements:
   host:
-    - python >=3.8
+    - python {{ python_min }}
     - pip
     - flit
     - pyserial
     - yaqd-core >=2021.3.0
   run:
-    - python >=3.8
+    - python >={{ python_min }}
     - pyserial
     - yaqd-core >=2021.3.0
 
@@ -37,6 +37,7 @@ test:
     - yaqd-acton-2150i --help
   requires:
     - pip
+    - python {{ python_min }}
 
 about:
   home: https://gitlab.com/yaq/yaqd-acton
